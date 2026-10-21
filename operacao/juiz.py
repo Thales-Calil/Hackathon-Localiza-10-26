@@ -171,8 +171,26 @@ def liberadas_sem_kit(status: dict) -> list:
     return nomes
 
 
+def baixar_kit(c: Cliente, ag: str) -> Path:
+    """Como Cliente.baixar_kit, mas aceita o zip em base64 (o API Gateway devolve assim)."""
+    import base64
+    import io
+    import zipfile
+    bruto = c._req("GET", f"/agencias/{ag}/kit")
+    if not bruto.startswith(b"PK"):
+        bruto = base64.b64decode(bruto)
+    DADOS.mkdir(parents=True, exist_ok=True)
+    raiz = DADOS.resolve()
+    with zipfile.ZipFile(io.BytesIO(bruto)) as z:
+        for n in z.namelist():
+            if not (raiz / n).resolve().is_relative_to(raiz):
+                raise SystemExit(f"caminho suspeito no zip: {n}")
+        z.extractall(DADOS)
+    return DADOS / ag
+
+
 def cmd_kit(c: Cliente, a) -> None:
-    pasta = chamar("kit", a.agencia, "", "", lambda: c.baixar_kit(a.agencia, DADOS))
+    pasta = chamar("kit", a.agencia, "", "", lambda: baixar_kit(c, a.agencia))
     anotar(acao="kit", agencia=a.agencia, arquivo=rel(pasta))
     print(f"kit extraído em {rel(pasta)}")
 

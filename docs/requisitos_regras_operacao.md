@@ -133,7 +133,8 @@
 | S-02 | `divisao: prioridade` também ordena a camada 1 dentro do carregador | `recalcular_potencias` | Já confirmada pelo exemplo 6.3.5 (Dolphin GS com 0 na camada 1) |
 | S-03 | "Contrato ainda não retirado" = contrato ainda não processado (atendido ou perdido) | `_proxima_reserva` | Teste com `proxima_retirada` |
 | S-04 | Com `chegada`, carros do estoque em T0 (fora da fila) não têm instante de entrada | `chave_prioridade` | Só afeta `divisao: prioridade`; conferir com o juiz |
-| S-05 | Formato dos eventos (RO-18) | `agendar_eventos` | Anúncio oficial |
+| S-05 | Formato dos eventos (RO-18): **confirmado** em `GET /status` como `[tipo, agencia, inicio, fim, valor]`. Significado de `corte` (limite × valor) ainda é suposição | `agendar_eventos`, `on_evento` | Anúncio oficial ou teste pago em Marrakech |
+| S-07 | `fila_max` do juiz às vezes vale 0 numa janela entre janelas com fila cheia (ex.: E1, seg 18/10 09:00) | `medicao.series` / `anotar` (kit) | Divergência conhecida e só na série; métricas, potência, plugados e nota batem exatamente (E1, H09, H13 completos, 21/10) |
 | S-06 | `autonomia_min_retirada_km` não é usado pelo juiz (só SOC ≥ 80%) | `escolher_carro` | Pergunta aos instrutores |
 
 ## Rastreabilidade

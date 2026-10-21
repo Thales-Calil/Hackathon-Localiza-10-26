@@ -1,0 +1,65 @@
+{
+  "agencia": "Bangkok",
+  "periodo": "publico",
+  "valido": true,
+  "erros": [],
+  "violacoes": [],
+  "nota": 2871,
+  "metricas": {
+    "certos": 267,
+    "pico_kw": 21.000000000000014,
+    "upgrades": 2,
+    "contratos": 271,
+    "custo_infra": 750,
+    "energia_kwh": 4458.731790752912,
+    "nao_atendidos": 2,
+    "atendimento_pct": 99.2619926199262,
+    "energia_ponta_kwh": 0,
+    "demanda_contratada_kw": 0
+  },
+  "taxa": 0,
+  "saldo": 1000,
+  "repetido": true,
+  "pontos": {
+    "itens": [
+      [
+        "certo",
+        267,
+        15,
+        4005
+      ],
+      [
+        "upgrade",
+        2,
+        8,
+        16
+      ],
+      [
+        "nao_atendido",
+        2,
+        -200,
+        -400
+      ],
+      [
+        "demanda_contratada",
+        0,
+        -2,
+        0
+      ],
+      [
+        "energia_ponta_kwh",
+        0,
+        -0.5,
+        0
+      ],
+      [
+        "infraestrutura",
+        750,
+        -1,
+        -750
+      ]
+    ],
+    "nota": 2871
+  },
+  "custo_infra": 750
+}

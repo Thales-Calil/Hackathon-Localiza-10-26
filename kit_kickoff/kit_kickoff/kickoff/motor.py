@@ -482,17 +482,18 @@ class Motor:
         O significado e o formato de `params` são explicados no anúncio de cada evento; vêm de
         `eventos_ativos` de GET /status. Ex. de uso: `self.agendar(t, PRIO_ABERTURA, 'evento', params)`.
         """
-        # PROVISÓRIO até o anúncio oficial: params = [inicio_min, agencia, tipo, fim_min, valor].
-        # tipo "limite_kw": valor = kW máximos da agência; tipo "carregador_fora": valor = id do
-        # ponto ("dc_30-0") ou do modelo ("dc_30", atinge o primeiro ponto desse modelo).
+        # Formato visto em GET /status (21/10): params = [tipo, agencia, inicio_min, fim_min, valor],
+        # ex.: ["corte", "Marrakech", 31680, 34560, 0.7].
+        # tipo "corte" (SUPOSIÇÃO S-05: limite da agência × valor no intervalo); "limite_kw": valor = kW máximos;
+        # "carregador_fora": valor = id do ponto ("dc_30-0") ou do modelo ("dc_30", o primeiro desse modelo).
         for params in eventos:
             params = list(params)
-            if len(params) < 3:
+            if len(params) < 4:
                 self.avisos.append(f"evento ignorado (formato desconhecido): {params}")
                 continue
-            ini = max(float(params[0]), tempo.T0)
+            ini = max(float(params[2]), tempo.T0)
             self.agendar(ini, PRIO_ABERTURA, "evento", params, "inicio")
-            if len(params) > 3 and params[3] is not None:
+            if params[3] is not None:
                 self.agendar(float(params[3]), PRIO_ABERTURA, "evento", params, "fim")
 
     def _ponto_do_evento(self, alvo) -> Optional[Ponto]:
@@ -507,9 +508,11 @@ class Motor:
         Recalcule as potências; ao voltar um carregador, tente plugar a fila (6.3.3).
         """
         p, fase = params
-        tipo = p[2]
+        tipo = p[0]
         valor = p[4] if len(p) > 4 else None
-        if tipo == "limite_kw":
+        if tipo == "corte":
+            self.limite_kw = self.limite_base_kw * float(valor) if fase == "inicio" else self.limite_base_kw
+        elif tipo == "limite_kw":
             self.limite_kw = min(self.limite_base_kw, float(valor)) if fase == "inicio" else self.limite_base_kw
         elif tipo == "carregador_fora":
             ponto = self._ponto_do_evento(valor)

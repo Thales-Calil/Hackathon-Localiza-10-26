@@ -1,0 +1,135 @@
+{
+ "_leia": "Pesos e custos conhecidos, cada um com a fonte. valor null = ainda desconhecido. Atualizar a cada teste novo (custo_infra e cascata do juiz) ou quando o catálogo trouxer custos.",
+ "pesos": {
+  "Bangkok": {
+   "valores": {
+    "certo": 15,
+    "upgrade": 8,
+    "nao_atendido": -200,
+    "infraestrutura": -1,
+    "energia_ponta_kwh": -0.5,
+    "demanda_contratada": -2
+   },
+   "fonte": "GET /catalogo (fase clara, 21/10); confere com a cascata de E1 e E8"
+  },
+  "Istanbul": {
+   "valores": {
+    "certo": 15,
+    "upgrade": 8,
+    "nao_atendido": -200,
+    "infraestrutura": -1,
+    "energia_ponta_kwh": -0.5,
+    "demanda_contratada": -2
+   },
+   "fonte": "GET /catalogo (fase clara, 21/10)"
+  },
+  "Hanoi": {
+   "valores": {
+    "certo": 15,
+    "upgrade": 8,
+    "nao_atendido": -200,
+    "infraestrutura": -1,
+    "energia_ponta_kwh": -0.5,
+    "demanda_contratada": -2
+   },
+   "fonte": "GET /catalogo (fase clara, 21/10)"
+  },
+  "Marrakech": {
+   "valores": {
+    "certo": 15,
+    "upgrade": 8,
+    "nao_atendido": -200,
+    "infraestrutura": -1,
+    "energia_ponta_kwh": -0.5,
+    "demanda_contratada": -2
+   },
+   "fonte": "GET /catalogo (fase clara, 21/10)"
+  },
+  "Zurich": {
+   "valores": {
+    "certo": 15,
+    "upgrade": 8,
+    "nao_atendido": -200,
+    "infraestrutura": -1,
+    "energia_ponta_kwh": -0.5,
+    "demanda_contratada": -2
+   },
+   "fonte": "GET /catalogo (fase clara, 21/10)"
+  }
+ },
+ "peso_padrao": "Bangkok",
+ "custos": {
+  "carregadores": {
+   "ac_7": {
+    "valor": 250,
+    "fonte": "GET /catalogo (fase clara, 21/10); confere com a dedução E8 (250)"
+   },
+   "dc_30": {
+    "valor": 3500,
+    "fonte": "GET /catalogo (fase clara, 21/10); confere com a dedução E1 (3500)"
+   },
+   "ac_11": {
+    "valor": 1100,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "ac_22x2": {
+    "valor": 1500,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "dc_60x2": {
+    "valor": 7300,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "dc_120x2": {
+    "valor": 15800,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   }
+  },
+  "entradas": {
+   "_existente": {
+    "valor": 0,
+    "fonte": "regulamento 7.2: manter a entrada existente custa 0"
+   },
+   "b3_75": {
+    "valor": 5000,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "a4_150": {
+    "valor": 6500,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "a4_225": {
+    "valor": 8200,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "a4_300": {
+    "valor": 10000,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "se_500": {
+    "valor": 18800,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "se_750": {
+    "valor": 24400,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "se_1000": {
+    "valor": 30000,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "se_1500": {
+    "valor": 41200,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "se_2000": {
+    "valor": 52500,
+    "fonte": "GET /catalogo (fase clara, 21/10)"
+   },
+   "b3_45": {
+    "valor": null,
+    "fonte": "GET /catalogo: sem custo (só vale como entrada existente)"
+   }
+  }
+ }
+}

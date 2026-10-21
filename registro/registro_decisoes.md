@@ -27,6 +27,8 @@
 
 ## Leitura da Neblina (pesos inferidos antes de H4)
 
+Detalhe de cada teste em [hipoteses.md](hipoteses.md) (gerado por `py analise/hipoteses.py relatorio`). Aqui vai só o resumo dos pesos.
+
 | Hora | Par de testes (o que mudou) | Δ nota | Δ métrica | Peso inferido |
 |---|---|---|---|---|
 | | | | | |

@@ -1,0 +1,145 @@
+submissao,item,regra,metrica_motor,metrica_juiz,peso,pontos_motor,pontos_juiz,bate
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",270,270,15,4050,4050,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json,upgrade,RO-05 (menor upgrade),0,0,8,0,0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json,nao_atendido,RO-06 (cliente perdido),1,1,-200,-200,-200,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,0.0,-2,-0.0,-0.0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,0,-0.5,-0.0,-0.0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",750.0,750,-1,-750.0,-750,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H13_ac7x3_proxret_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",270,270,15,4050,4050,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H13_ac7x3_proxret_evitar.json,upgrade,RO-05 (menor upgrade),0,0,8,0,0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H13_ac7x3_proxret_evitar.json,nao_atendido,RO-06 (cliente perdido),1,1,-200,-200,-200,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H13_ac7x3_proxret_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,0.0,-2,-0.0,-0.0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H13_ac7x3_proxret_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,0,-0.5,-0.0,-0.0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H13_ac7x3_proxret_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",750.0,750,-1,-750.0,-750,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E8_ac7x3_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",267,267,15,4005,4005,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E8_ac7x3_evitar.json,upgrade,RO-05 (menor upgrade),2,2,8,16,16,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E8_ac7x3_evitar.json,nao_atendido,RO-06 (cliente perdido),2,2,-200,-400,-400,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E8_ac7x3_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,0,-2,-0.0,0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E8_ac7x3_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,0,-0.5,-0.0,0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E8_ac7x3_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",750.0,750,-1,-750.0,-750,sim
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#1,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,271,15,4065,4065,sim
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#1,upgrade,RO-05 (menor upgrade),0,0,8,0,0,sim
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#1,nao_atendido,RO-06 (cliente perdido),0,0,-200,0,0,sim
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#1,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,0.0,-2,-0.0,-0.0,sim
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#1,energia_ponta_kwh,RO-16 + medição RO-19,101.0501017150587,101.0501017150587,-0.5,-50.52505085752935,-50.52505085752935,sim
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#1,infraestrutura,"7.1, 7.2 (custos do catálogo)",4000.0,4000,-1,-4000.0,-4000,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E1_base.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,271,15,4065,4065,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E1_base.json,upgrade,RO-05 (menor upgrade),0,0,8,0,0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E1_base.json,nao_atendido,RO-06 (cliente perdido),0,0,-200,0,0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E1_base.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,0.0,-2,-0.0,-0.0,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E1_base.json,energia_ponta_kwh,RO-16 + medição RO-19,101.0501017150587,101.0501017150587,-0.5,-50.52505085752935,-50.52505085752935,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E1_base.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",4000.0,4000,-1,-4000.0,-4000,sim
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",270,,15,4050,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json,nao_atendido,RO-06 (cliente perdido),1,,-200,-200,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",1000.0,,-1,-1000.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",270,,15,4050,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json,nao_atendido,RO-06 (cliente perdido),1,,-200,-200,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",1750.0,,-1,-1750.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",3000.0,,-1,-3000.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3,infraestrutura,"7.1, 7.2 (custos do catálogo)",3500.0,,-1,-3500.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",3500.0,,-1,-3500.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",270,,15,4050,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json,nao_atendido,RO-06 (cliente perdido),1,,-200,-200,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",3300.0,,-1,-3300.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E4_dc30.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E4_dc30.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E4_dc30.json,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E4_dc30.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E4_dc30.json,energia_ponta_kwh,RO-16 + medição RO-19,63.583628212029986,,-0.5,-31.791814106014993,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E4_dc30.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",3500.0,,-1,-3500.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E2_base_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E2_base_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E2_base_evitar.json,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E2_base_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E2_base_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E2_base_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",4000.0,,-1,-4000.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#6,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#6,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#6,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#6,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#6,energia_ponta_kwh,RO-16 + medição RO-19,101.49022617947726,,-0.5,-50.74511308973863,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#6,infraestrutura,"7.1, 7.2 (custos do catálogo)",4000.0,,-1,-4000.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#7,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",270,,15,4050,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#7,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#7,nao_atendido,RO-06 (cliente perdido),1,,-200,-200,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#7,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#7,energia_ponta_kwh,RO-16 + medição RO-19,98.95012967486467,,-0.5,-49.475064837432335,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#7,infraestrutura,"7.1, 7.2 (custos do catálogo)",4000.0,,-1,-4000.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#8,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#8,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#8,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#8,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#8,energia_ponta_kwh,RO-16 + medição RO-19,169.67079507372037,,-0.5,-84.83539753686019,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#8,infraestrutura,"7.1, 7.2 (custos do catálogo)",4500.0,,-1,-4500.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E5_dc60_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E5_dc60_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E5_dc60_evitar.json,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E5_dc60_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E5_dc60_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E5_dc60_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",7300.0,,-1,-7300.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#4,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#4,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#4,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#4,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#4,energia_ponta_kwh,RO-16 + medição RO-19,31.410784555863398,,-0.5,-15.705392277931699,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#4,infraestrutura,"7.1, 7.2 (custos do catálogo)",7300.0,,-1,-7300.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#5,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#5,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#5,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#5,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#5,energia_ponta_kwh,RO-16 + medição RO-19,31.59906409021223,,-0.5,-15.799532045106115,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#5,infraestrutura,"7.1, 7.2 (custos do catálogo)",7300.0,,-1,-7300.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E6_dc30_b3_75_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E6_dc30_b3_75_evitar.json,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E6_dc30_b3_75_evitar.json,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E6_dc30_b3_75_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E6_dc30_b3_75_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E6_dc30_b3_75_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",8500.0,,-1,-8500.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#9,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#9,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#9,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#9,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#9,energia_ponta_kwh,RO-16 + medição RO-19,11.760997924624983,,-0.5,-5.880498962312491,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#9,infraestrutura,"7.1, 7.2 (custos do catálogo)",14500.0,,-1,-14500.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",271,,15,4065,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10,upgrade,RO-05 (menor upgrade),0,,8,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10,nao_atendido,RO-06 (cliente perdido),0,,-200,0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",60,,-2,-120,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10,infraestrutura,"7.1, 7.2 (custos do catálogo)",25800.0,,-1,-25800.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",88,,15,1320,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json,upgrade,RO-05 (menor upgrade),22,,8,176,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json,nao_atendido,RO-06 (cliente perdido),161,,-200,-32200,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json,energia_ponta_kwh,RO-16 + medição RO-19,0,,-0.5,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json,infraestrutura,"7.1, 7.2 (custos do catálogo)",250.0,,-1,-250.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2,certo,"RO-04, RO-05 (escolha do carro, sem upgrade)",88,,15,1320,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2,upgrade,RO-05 (menor upgrade),22,,8,176,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2,nao_atendido,RO-06 (cliente perdido),161,,-200,-32200,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2,demanda_contratada,"6.2, 6.3.7 (validar.demanda_kw)",0.0,,-2,-0.0,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2,energia_ponta_kwh,RO-16 + medição RO-19,222.80098621588925,,-0.5,-111.40049310794463,,não testada
+kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2,infraestrutura,"7.1, 7.2 (custos do catálogo)",250.0,,-1,-250.0,,não testada

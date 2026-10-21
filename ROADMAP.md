@@ -104,6 +104,24 @@ H0 = início do jogo, logo depois da abertura. Não há relógio automático: va
 
 ---
 
+## Método: toda submissão é uma hipótese
+
+Nada vai ao juiz sem estar registrado em `analise/hipoteses.py`. O caderno guarda a previsão do nosso motor **antes** do teste e a resposta do juiz **depois**. A diferença entre as duas mede a fidelidade do motor (prêmio de modelagem); a diferença contra a base mede os pesos (prêmio de leitura da Neblina).
+
+1. **Formular** (P4): uma frase testável, mudando **uma coisa só** em relação a uma base. Ex.: "evitar_ponta zera a ponta sem perder clientes; a nota sobe".
+2. **Registrar e prever** (P4): `py analise/hipoteses.py nova H09 SUB.json "frase" --base E3`. Grava a submissão normalizada e as métricas previstas pelo motor.
+3. **Testar** (P1): `py operacao/juiz.py teste Bangkok SUB.json --completo`. Para nota vista no console web: `checar --manual`.
+4. **Checar** (P4): `py analise/hipoteses.py checar H09`. Encontra a resposta no `log_juiz.csv`, compara previsto × juiz e calcula Δnota contra a base:
+   - só a ponta mudou → `w_ponta`;
+   - só a obra mudou → custo da obra em pontos (por unidade, se for um único tipo);
+   - motor divergiu → leitura marcada **NÃO CONFIÁVEL** e o P2/P3 roda `comparar.py`.
+5. **Concluir** (quem decidiu): `py analise/hipoteses.py concluir H09 "texto"`.
+6. **Publicar**: `py analise/hipoteses.py relatorio` gera `registro/hipoteses.md`, tabela pronta para o dashboard e o pitch.
+
+**Nota local de todos os JSON:** `py analise/nota_local.py` usa o nosso motor e `analise/pesos_custos.json` (cada peso e custo com a fonte). Gera `registro/notas_locais.md` (ranking) e `registro/matriz_rastreabilidade.md`/`.csv` (item da nota × regra do motor × peso/custo × juiz). A cada teste novo: salvar o par `X.sub.json` + `X.json` em `operacao/respostas/<AG>/`, preencher o custo descoberto em `pesos_custos.json` e rodar de novo.
+
+Hipóteses pré-registradas para Bangkok: E1–E8 (`kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/LEIAME.md`).
+
 ## Orçamento de m7Coins (1.000)
 
 | Uso | m7Coins | Observação |

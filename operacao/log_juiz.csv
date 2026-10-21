@@ -1,0 +1,12 @@
+hora,acao,agencia,detalhe,chave,taxa,saldo,nota,arquivo,operador
+2026-10-21T15:11:57,status,,,,,1000,,,jose_kojo
+2026-10-21T15:12:07,catalogo,,,,,,,kit_kickoff\kit_kickoff\dados\catalogo.json,jose_kojo
+2026-10-21T15:12:30,kit,Istanbul,,,,,,kit_kickoff\kit_kickoff\dados\Istanbul,jose_kojo
+2026-10-21T15:12:31,kit,Hanoi,,,,,,kit_kickoff\kit_kickoff\dados\Hanoi,jose_kojo
+2026-10-21T15:12:32,kit,Marrakech,,,,,,kit_kickoff\kit_kickoff\dados\Marrakech,jose_kojo
+2026-10-21T15:12:33,kit,Zurich,,,,,,kit_kickoff\kit_kickoff\dados\Zurich,jose_kojo
+2026-10-21T15:12:51,instrucoes,,,,,,,,jose_kojo
+2026-10-21T15:13:37,status,,,,,1000,,,claude
+2026-10-21T15:13:38,teste,Bangkok,completo,8230a35b8a,0,1000,14.47494914247065,operacao\respostas\Bangkok\151338_teste_completo_8230a35b8a.json,claude
+2026-10-21T15:14:41,teste,Bangkok,completo,12023e70e2,0,1000,3100.0,operacao\respostas\Bangkok\151441_teste_completo_12023e70e2.json,claude
+2026-10-21T15:15:44,teste,Bangkok,completo,72fbf8d93b,0,1000,3100.0,operacao\respostas\Bangkok\151544_teste_completo_72fbf8d93b.json,claude

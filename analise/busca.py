@@ -57,6 +57,24 @@ def entradas_validas(cen, pedido: str) -> list:
 def grade(cen, a) -> list:
     pols = POLITICAS_TODAS if a.politicas == "todas" else [{}]
     demandas = [int(x) for x in a.demandas.split(",")] if a.demandas else [None]
+    if getattr(a, "hardware", None):
+        # fase 2: parte dos hardwares (carregadores + entrada) de uma lista já ranqueada
+        vistos, subs = set(), []
+        for h in json.loads(Path(a.hardware).read_text(encoding="utf-8-sig")):
+            chave = (json.dumps(h["carregadores"], sort_keys=True), h["entrada"])
+            if chave in vistos:
+                continue
+            vistos.add(chave)
+            b3 = cen.entradas[h["entrada"]].kva <= 75
+            for dem in ([None] if b3 else demandas):
+                for pol in pols:
+                    s = {"agencia": cen.agencia.nome, "carregadores": h["carregadores"], "entrada": h["entrada"]}
+                    if dem is not None:
+                        s["demanda_contratada_kw"] = dem
+                    if pol:
+                        s["politica"] = pol
+                    subs.append(s)
+        return subs
     subs = []
     for car in combinacoes_carregadores(cen, a.max_tipos, a.min_saidas):
         for ent in entradas_validas(cen, a.entradas):
@@ -91,6 +109,8 @@ def main(argv=None) -> None:
     ap.add_argument("--politicas", choices=("padrao", "todas"), default="padrao")
     ap.add_argument("--eventos", help="operacao/status_ultimo.json ou lista de params")
     ap.add_argument("--top", type=int, default=10)
+    ap.add_argument("--hardware", help="fase 2: JSON (lista) com hardwares já ranqueados; varia política/demanda")
+    ap.add_argument("--sufixo", default="", help="sufixo dos arquivos de saída (ex.: _fase2)")
     a = ap.parse_args(argv)
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -119,7 +139,7 @@ def main(argv=None) -> None:
     saida.mkdir(exist_ok=True)
     colunas = ["nota", "contratos", "certos", "upgrades", "nao_atendidos", "atendimento_pct", "pico_kw",
                "energia_kwh", "energia_ponta_kwh", "demanda_contratada_kw", "custo_infra"]
-    with (saida / f"{a.agencia}_busca.csv").open("w", encoding="utf-8", newline="") as f:
+    with (saida / f"{a.agencia}_busca{a.sufixo}.csv").open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["carregadores", "saidas", "entrada", "politica", *colunas])
         for r in resultados:
@@ -128,9 +148,9 @@ def main(argv=None) -> None:
                         json.dumps(r["sub"].get("politica", "padrao")),
                         r.get("nota"), *[m.get(c, "") for c in colunas[1:]]])
     top = [r["sub"] for r in resultados[:a.top]]
-    (saida / f"{a.agencia}_top.json").write_text(json.dumps(top, ensure_ascii=False, indent=1), encoding="utf-8")
+    (saida / f"{a.agencia}_top{a.sufixo}.json").write_text(json.dumps(top, ensure_ascii=False, indent=1), encoding="utf-8")
     if top:
-        (saida / f"{a.agencia}_melhor.json").write_text(json.dumps(top[0], ensure_ascii=False, indent=1),
+        (saida / f"{a.agencia}_melhor{a.sufixo}.json").write_text(json.dumps(top[0], ensure_ascii=False, indent=1),
                                                          encoding="utf-8")
 
     print(f"\nTop {min(a.top, len(resultados))} ({'por nota' if com_nota else 'sem nota: por perdidos, ponta, saídas'}):")
