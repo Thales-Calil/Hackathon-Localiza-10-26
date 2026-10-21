@@ -1,0 +1,65 @@
+{
+  "agencia": "Istanbul",
+  "periodo": "publico",
+  "valido": true,
+  "erros": [],
+  "violacoes": [],
+  "nota": 8381.19435907689,
+  "metricas": {
+    "certos": 1288,
+    "pico_kw": 51.00000000000003,
+    "upgrades": 3,
+    "contratos": 1293,
+    "custo_infra": 9250,
+    "energia_kwh": 27538.286593319255,
+    "nao_atendidos": 2,
+    "atendimento_pct": 99.84532095901005,
+    "energia_ponta_kwh": 2625.611281846221,
+    "demanda_contratada_kw": 0
+  },
+  "taxa": 20,
+  "saldo": 900,
+  "repetido": false,
+  "pontos": {
+    "itens": [
+      [
+        "certo",
+        1288,
+        15,
+        19320
+      ],
+      [
+        "upgrade",
+        3,
+        8,
+        24
+      ],
+      [
+        "nao_atendido",
+        2,
+        -200,
+        -400
+      ],
+      [
+        "demanda_contratada",
+        0,
+        -2,
+        0
+      ],
+      [
+        "energia_ponta_kwh",
+        2625.611281846221,
+        -0.5,
+        -1312.8056409231106
+      ],
+      [
+        "infraestrutura",
+        9250,
+        -1,
+        -9250
+      ]
+    ],
+    "nota": 8381.19435907689
+  },
+  "custo_infra": 9250
+}

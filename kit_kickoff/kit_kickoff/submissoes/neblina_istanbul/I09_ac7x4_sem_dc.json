@@ -1,0 +1,12 @@
+{
+ "agencia": "Istanbul",
+ "carregadores": {
+  "ac_7": 4
+ },
+ "entrada": "b3_75",
+ "politica": {
+  "prioridade": "proxima_retirada",
+  "divisao": "igual",
+  "evitar_ponta": false
+ }
+}

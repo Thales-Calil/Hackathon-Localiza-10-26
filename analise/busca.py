@@ -56,6 +56,8 @@ def entradas_validas(cen, pedido: str) -> list:
 
 def grade(cen, a) -> list:
     pols = POLITICAS_TODAS if a.politicas == "todas" else [{}]
+    if getattr(a, "politica", None):
+        pols = [json.loads(a.politica)]
     demandas = [int(x) for x in a.demandas.split(",")] if a.demandas else [None]
     if getattr(a, "hardware", None):
         # fase 2: parte dos hardwares (carregadores + entrada) de uma lista já ranqueada
@@ -111,6 +113,7 @@ def main(argv=None) -> None:
     ap.add_argument("--top", type=int, default=10)
     ap.add_argument("--hardware", help="fase 2: JSON (lista) com hardwares já ranqueados; varia política/demanda")
     ap.add_argument("--sufixo", default="", help="sufixo dos arquivos de saída (ex.: _fase2)")
+    ap.add_argument("--politica", help='uma política fixa em JSON, ex.: \'{"prioridade": "proxima_retirada"}\'')
     a = ap.parse_args(argv)
     sys.stdout.reconfigure(encoding="utf-8")
 

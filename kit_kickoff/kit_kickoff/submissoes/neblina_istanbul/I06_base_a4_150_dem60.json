@@ -1,0 +1,14 @@
+{
+ "agencia": "Istanbul",
+ "carregadores": {
+  "ac_7": 3,
+  "dc_30": 1
+ },
+ "entrada": "a4_150",
+ "demanda_contratada_kw": 60,
+ "politica": {
+  "prioridade": "proxima_retirada",
+  "divisao": "igual",
+  "evitar_ponta": false
+ }
+}

@@ -88,7 +88,8 @@ def cmd_nova(a) -> None:
     print(f"{a.id} registrada (chave {k}). Previsão do motor: certos={m['certos']} upg={m['upgrades']} "
           f"perdidos={m['nao_atendidos']} ponta={m['energia_ponta_kwh']:.1f} kWh pico={m['pico_kw']:.1f} kW "
           f"nota={prev['nota']}")
-    print(f"Teste no juiz: py operacao/juiz.py teste {sub['agencia']} {rel(a.sub)} --completo")
+    aviso = "" if sub["agencia"] == juiz.TUTORIAL else "  (PAGO: placar 20 / completo 50 m7Coins — só com decisão da equipe)"
+    print(f"Teste no juiz: py operacao/juiz.py teste {sub['agencia']} {rel(a.sub)}{aviso}")
 
 
 def resposta_do_juiz(reg: dict, a) -> tuple:

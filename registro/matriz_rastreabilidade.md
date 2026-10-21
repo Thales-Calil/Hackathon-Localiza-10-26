@@ -64,6 +64,22 @@ Agências sem pesos próprios usam os de **Bangkok** (hipótese, marcada nas tab
 
 ## 3. Item × regra × cálculo × juiz (submissões testadas no juiz)
 
+### `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I01_base_ac7x3_dc30_b3_75.json`
+
+3× ac_7 + 1× dc_30 · b3_75 · proxima_retirada/igual · resposta: `operacao/respostas/Istanbul/console_I01.json` · pesos de Istanbul
+
+| Item | Regra que gera a métrica | Métrica (motor) | Métrica (juiz) | Peso | Pontos (motor) | Pontos (juiz) | Bate? |
+|---|---|---|---|---|---|---|---|
+| certo | RO-04, RO-05 (escolha do carro, sem upgrade) | 1.288 | 1.288 | 15 | 19.320 | 19.320 | sim |
+| upgrade | RO-05 (menor upgrade) | 3 | 3 | 8 | 24 | 24 | sim |
+| nao_atendido | RO-06 (cliente perdido) | 2 | 2 | -200 | -400 | -400 | sim |
+| demanda_contratada | 6.2, 6.3.7 (validar.demanda_kw) | 0 | 0 | -2 | 0 | 0 | sim |
+| energia_ponta_kwh | RO-16 + medição RO-19 | 2.625,6 | 2.625,6 | -0,5 | -1.312,8 | -1.312,8 | sim |
+| infraestrutura | 7.1, 7.2 (custos do catálogo) | 9.250 | 9.250 | -1 | -9.250 | -9.250 | sim |
+| **nota** | | | | | **8.381,2** | **8.381,2** | sim |
+
+Custos usados: ac_7=250 (GET /catalogo (fase clara, 21/10); confere com a dedução E8 (250)); dc_30=3500 (GET /catalogo (fase clara, 21/10); confere com a dedução E1 (3500)); b3_75=5000 (GET /catalogo (fase clara, 21/10))
+
 ### `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H09_ac7x3_chegada_evitar.json`
 
 3× ac_7 · b3_45 · chegada/igual · evitar_ponta · resposta: `operacao/respostas/Bangkok/151441_teste_completo_12023e70e2.json` · pesos de Bangkok
@@ -148,9 +164,17 @@ Custos usados: ac_7=250 (GET /catalogo (fase clara, 21/10); confere com a deduç
 
 | Submissão | Nota local | Itens (pontos) | O que falta para a nota ser exata |
 |---|---|---|---|
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I03_base_chegada.json` | 8.419,8 | certo 19.350 · upgrade 8 · nao_atendido -400 · energia_ponta_kwh -1.288,2 · infraestrutura -9.250 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I10_ac22_ac7_dc30.json` | 7.834,2 | certo 19.380 · upgrade 8 · energia_ponta_kwh -1.303,8 · infraestrutura -10.250 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I02_base_evitar_ponta.json` | 7.105 | certo 18.675 · upgrade 280 · nao_atendido -2.600 · infraestrutura -9.250 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I06_base_a4_150_dem60.json` | 6.761,2 | certo 19.320 · upgrade 24 · nao_atendido -400 · demanda_contratada -120 · energia_ponta_kwh -1.312,8 · infraestrutura -10.750 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I04_base_menor_soc.json` | 6.429,8 | certo 19.185 · upgrade 24 · nao_atendido -2.200 · energia_ponta_kwh -1.329,2 · infraestrutura -9.250 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I08_ac7x2_dc60.json` | 5.003,2 | certo 19.380 · nao_atendido -200 · energia_ponta_kwh -1.376,8 · infraestrutura -12.800 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H15_ac7x4_chegada_evitar.json` | 2.850 | certo 4.050 · nao_atendido -200 · infraestrutura -1.000 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H12_ac22x2_ac7_chegada_evitar.json` | 2.100 | certo 4.050 · nao_atendido -200 · infraestrutura -1.750 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I07_ac7x2_dc30.json` | 1.166,3 | certo 17.835 · upgrade 552 · nao_atendido -7.000 · energia_ponta_kwh -1.220,7 · infraestrutura -9.000 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H11_ac22x2_x2_evitar.json` | 1.065 | certo 4.065 · infraestrutura -3.000 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I05_base_entrada_existente_b3_45.json` | 942,1 | certo 17.355 · upgrade 624 · nao_atendido -11.600 · energia_ponta_kwh -1.186,9 · infraestrutura -4.250 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#3` | 565 | certo 4.065 · infraestrutura -3.500 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E3_dc30_evitar.json` | 565 | certo 4.065 · infraestrutura -3.500 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/H10_ac11x3_chegada_evitar.json` | 550 | certo 4.050 · nao_atendido -200 · infraestrutura -3.300 | nada |
@@ -167,3 +191,4 @@ Custos usados: ac_7=250 (GET /catalogo (fase clara, 21/10); confere com a deduç
 | `kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#10` | -21.855 | certo 4.065 · demanda_contratada -120 · infraestrutura -25.800 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/neblina_bangkok/E7_ac7_evitar.json` | -30.954 | certo 1.320 · upgrade 176 · nao_atendido -32.200 · infraestrutura -250 | nada |
 | `kit_kickoff/kit_kickoff/submissoes/bangkok_manual.json#2` | -31.065,4 | certo 1.320 · upgrade 176 · nao_atendido -32.200 · energia_ponta_kwh -111,4 · infraestrutura -250 | nada |
+| `kit_kickoff/kit_kickoff/submissoes/neblina_istanbul/I09_ac7x4_sem_dc.json` | -84.659,8 | certo 8.490 · upgrade 2.272 · nao_atendido -88.600 · energia_ponta_kwh -821,8 · infraestrutura -6.000 | nada |

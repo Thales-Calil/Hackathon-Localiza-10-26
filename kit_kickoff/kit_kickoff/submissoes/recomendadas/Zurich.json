@@ -1,0 +1,14 @@
+{
+ "agencia": "Zurich",
+ "carregadores": {
+  "ac_7": 2,
+  "dc_60x2": 1
+ },
+ "entrada": "a4_150",
+ "demanda_contratada_kw": 80,
+ "politica": {
+  "prioridade": "proxima_retirada",
+  "divisao": "prioridade",
+  "evitar_ponta": false
+ }
+}

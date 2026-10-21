@@ -18,3 +18,13 @@
 | H12 | AC-22 + AC-7 perdem só 1 cliente; combinação barata | E1 | `{"ac_22x2": 1, "ac_7": 1} b3_45 · chegada/igual · evitar_ponta` | 270/0/1 · 0.0 | — | — | — | — | — | — | aberta |
 | H13 | proxima_retirada com 3 AC-7 também chega a 3100 (270/0/1) | E8 | `{"ac_7": 3} b3_45 · proxima_retirada/igual · evitar_ponta` | 270/0/1 · 0.0 | 3100.0 | 750 | sim | 229.0 | mesma obra, muda o atendimento ({'certos': 3, 'upgrades': -2, 'nao_atendidos': -1}): Δnota +229 = w_certo·Δcertos + w_upg·Δupg − w_perd·Δperdidos | — | testada |
 | H15 | 4º AC-7 não salva o cliente perdido (270/0/1): seguro de 250 que não paga em Bangkok | H09 | `{"ac_7": 4} b3_45 · chegada/igual · evitar_ponta` | 270/0/1 · 0.0 | — | — | — | — | — | — | aberta |
+| I01 | Base Istanbul: 3 AC-7 + DC-30 em b3_75 com proxima_retirada | — | `{"ac_7": 3, "dc_30": 1} b3_75 · proxima_retirada/igual` | 1288/3/2 · 2625.6 | 8381.2 | 9250 | sim | — | — | — | testada |
+| I02 | evitar_ponta zera ~2.600 kWh na ponta (+1.300), mas Istanbul abre 24 h: perde clientes demais? | I01 | `{"ac_7": 3, "dc_30": 1} b3_75 · proxima_retirada/igual · evitar_ponta` | 1245/35/13 · 0.0 | — | — | — | — | — | — | aberta |
+| I03 | chegada no lugar de proxima_retirada perde clientes | I01 | `{"ac_7": 3, "dc_30": 1} b3_75 · chegada/igual` | 1290/1/2 · 2576.4 | — | — | — | — | — | — | aberta |
+| I04 | menor_soc no lugar de proxima_retirada perde clientes | I01 | `{"ac_7": 3, "dc_30": 1} b3_75 · menor_soc/igual` | 1279/3/11 · 2658.3 | — | — | — | — | — | — | aberta |
+| I05 | Sem ampliar a entrada (economiza 5.000) o limite de 40,5 kW faz perder mais de 23 clientes | I01 | `{"ac_7": 3, "dc_30": 1} b3_45 · proxima_retirada/igual` | 1157/78/58 · 2373.8 | — | — | — | — | — | — | aberta |
+| I06 | a4_150 com demanda 60 dá folga mas custa 1.500 a mais de obra + 120 de demanda | I01 | `{"ac_7": 3, "dc_30": 1} a4_150 dem 60 · proxima_retirada/igual` | 1288/3/2 · 2625.6 | — | — | — | — | — | — | aberta |
+| I07 | Tirar 1 AC-7 (−250 de obra) custa mais em clientes | I01 | `{"ac_7": 2, "dc_30": 1} b3_75 · proxima_retirada/igual` | 1189/69/35 · 2441.4 | — | — | — | — | — | — | aberta |
+| I08 | DC-60 (2 saídas) no lugar de DC-30 + AC-7 não compensa os 3.550 a mais | I01 | `{"ac_7": 2, "dc_60x2": 1} b3_75 · proxima_retirada/igual` | 1292/0/1 · 2753.6 | — | — | — | — | — | — | aberta |
+| I09 | Só AC-7 (obra mínima) não dá conta de 46 contratos/dia | I01 | `{"ac_7": 4} b3_75 · proxima_retirada/igual` | 566/284/443 · 1643.6 | — | — | — | — | — | — | aberta |
+| I10 | AC-22 + AC-7 + DC-30: mesma quantidade de saídas, mais cara | I01 | `{"ac_22x2": 1, "ac_7": 1, "dc_30": 1} b3_75 · proxima_retirada/igual` | 1292/1/0 · 2607.7 | — | — | — | — | — | — | aberta |

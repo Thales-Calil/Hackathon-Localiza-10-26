@@ -134,11 +134,16 @@ class Motor:
                     if fim > tempo.T0:
                         self.agendar(fim, PRIO_ABERTURA, "ponta", False)
 
+        # estoque de T0 entra todo no mesmo instante (6.3.3) e só então a fila é plugada pela prioridade
+        self._entrada_t0 = True
         for vt in sorted(cen.veiculos, key=lambda x: x.id):
             if vt.situacao == "em_contrato":
                 self.agendar(max(vt.devolucao_t, tempo.T0), PRIO_DEVOLUCAO, "devolucao", vt.id, vt.soc_devolucao)
             else:
                 self.entrar_patio(self.veiculos[vt.id], tempo.T0)
+        self._entrada_t0 = False
+        self.plugar_fila(tempo.T0)
+        self.recalcular_potencias(tempo.T0)
         for c in cen.contratos:
             self.agendar(c.retirada_t, PRIO_RETIRADA, "retirada", c.id)
         self.agendar_eventos(self.eventos)
@@ -261,6 +266,8 @@ class Motor:
         if v.soc < v.alvo - EPS:
             v.na_fila, v.entrou_fila_t = True, t
             self.fila.append(v)
+        if getattr(self, "_entrada_t0", False):
+            return
         self.plugar_fila(t)
         self.recalcular_potencias(t)
 
